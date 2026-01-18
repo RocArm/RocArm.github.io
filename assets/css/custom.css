@@ -1,0 +1,55 @@
+/* Custom CSS Variables for Color Scheme Customization */
+/* Academic Slate Theme */
+:root {
+  /* Primary Colors - Easily customizable */
+  --primary-color: #334155;      /* Charcoal */
+  --primary-light: #64748b;      /* Slate gray */
+  --primary-dark: #1e293b;       /* Dark slate */
+  
+  /* Accent Colors */
+  --accent-color: #14b8a6;       /* Teal accent */
+  --accent-hover: #0d9488;       /* Darker teal on hover */
+  
+  /* Text Colors */
+  --text-primary: #1e293b;       /* Dark slate for main text */
+  --text-secondary: #64748b;     /* Medium slate for secondary text */
+  --text-light: #94a3b8;         /* Light slate for muted text */
+  
+  /* Background Colors */
+  --bg-primary: #ffffff;         /* White background */
+  --bg-secondary: #f8fafc;       /* Very light slate background */
+  --bg-card: #ffffff;            /* Card background */
+  
+  /* Border Colors */
+  --border-color: #e2e8f0;       /* Light slate border */
+  --border-hover: #cbd5e1;       /* Slightly darker on hover */
+  
+  /* Status Badge Colors */
+  --badge-working: #ccfbf1;      /* Light teal for working papers */
+  --badge-working-text: #0f766e; /* Dark teal text */
+  --badge-published: #d1fae5;    /* Light green for published */
+  --badge-published-text: #065f46; /* Dark green text */
+  --badge-preliminary: #fef3c7;  /* Light yellow for preliminary */
+  --badge-preliminary-text: #92400e; /* Brown text */
+}
+
+/* Apply custom colors to Tailwind classes */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.border-primary {
+  border-color: var(--primary-color);
+}
+
+.hover\:bg-primary-dark:hover {
+  background-color: var(--primary-dark);
+}
+
+.hover\:text-primary:hover {
+  color: var(--primary-color);
+}
