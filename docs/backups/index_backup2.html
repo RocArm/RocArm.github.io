@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Roc Armenter - Executive Vice President and Economist at Federal Reserve Bank of Philadelphia, Visiting Scholar at Wharton School. Research in monetary policy, macroeconomics, and international economics.">
+    <meta name="author" content="Roc Armenter">
+    <title>Roc Armenter - Economist</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Custom font stack */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-xl font-semibold text-gray-900">Roc Armenter</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-teal-600 transition">About</a>
+                    <a href="#working-papers" class="text-gray-700 hover:text-teal-600 transition">Working Papers</a>
+                    <a href="#publications" class="text-gray-700 hover:text-teal-600 transition">Publications</a>
+                    <a href="files/CV.pdf" class="text-gray-700 hover:text-teal-600 transition" target="_blank">CV</a>
+                    <a href="#links" class="text-gray-700 hover:text-teal-600 transition">Links</a>
+                </div>
+                <!-- Mobile menu button -->
+                <button class="md:hidden text-gray-700" onclick="toggleMobileMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="#about" class="block py-2 text-gray-700 hover:text-teal-600">About</a>
+                <a href="#working-papers" class="block py-2 text-gray-700 hover:text-teal-600">Working Papers</a>
+                <a href="#publications" class="block py-2 text-gray-700 hover:text-teal-600">Publications</a>
+                <a href="files/CV.pdf" class="block py-2 text-gray-700 hover:text-teal-600" target="_blank">CV</a>
+                <a href="#links" class="block py-2 text-gray-700 hover:text-teal-600">Links</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="bg-white py-16 md:py-24">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
+                <!-- Profile Photo -->
+                <div class="flex-shrink-0">
+                    <img src="assets/images/profile.jpg" alt="Roc Armenter" class="w-48 h-48 md:w-56 md:h-56 rounded-lg shadow-lg object-cover">
+                </div>
+                
+                <!-- Info -->
+                <div class="flex-1 text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Roc Armenter</h1>
+                    <div class="space-y-2 mb-6">
+                        <p class="text-lg md:text-xl text-gray-700"><span class="font-semibold">Executive Vice President and Economist</span>, FRB Philadelphia</p>
+                        <p class="text-lg md:text-xl text-gray-700"><span class="font-semibold">Visiting Scholar</span>, Wharton School - Finance</p>
+                    </div>
+                    
+                    <!-- Areas of Expertise -->
+                    <div class="mb-6">
+                        <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Areas of Expertise</h3>
+                        <div class="flex flex-wrap gap-2 justify-center md:justify-start">
+                            <span class="px-4 py-2 bg-teal-50 text-teal-800 rounded-full text-sm font-medium">Monetary Policy</span>
+                            <span class="px-4 py-2 bg-teal-50 text-teal-800 rounded-full text-sm font-medium">Macroeconomics</span>
+                            <span class="px-4 py-2 bg-teal-50 text-teal-800 rounded-full text-sm font-medium">Finance</span>
+                            <span class="px-4 py-2 bg-teal-50 text-teal-800 rounded-full text-sm font-medium">Machine Learning</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact -->
+                    <div class="mt-6">
+                        <a href="mailto:rocarm@wharton.upenn.edu" class="inline-flex items-center text-teal-600 hover:text-teal-800 transition">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            rocarm@wharton.upenn.edu
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bio -->
+            <div class="mt-12 pt-12 border-t border-gray-200">
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    Macroeconomics and international economics are two of Roc's primary research interests, but he considers his work on monetary and fiscal policy to be among his best. He has played an important role in the design of balance sheet policies and implementation framework during his time at the Philadelphia Fed.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    Roc has written an extensive collection of working papers and has published articles in a variety of journals, including the <em>Review of Economic Studies</em>, the <em>American Economic Review</em>, and the <em>Journal of Monetary Economics</em>.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Since joining the Federal Reserve Bank of Philadelphia in 2008, Roc has advanced through staff and officer promotions from senior economist to vice president and economist to executive vice president and director. Previously, he worked at the Federal Reserve Bank of New York in the Research Department.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mt-4">
+                    Roc has a Ph.D. in economics from Northwestern University and an M.Sc. and a B.A. in economics from the Universitat Pompeu Fabra.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Working Papers Section -->
+    <section id="working-papers" class="py-16 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Working Papers</h2>
+            
+            <div class="space-y-6">
+                <!-- Paper 1 -->
+                <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="https://www.philadelphiafed.org/the-economy/macroeconomics/rational-inattention-ignorance-equivalence" class="hover:text-teal-600 transition">
+                                Rational Inattention via Ignorance Equivalence
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium whitespace-nowrap">Working Paper</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with <a href="https://sites.google.com/site/mmulleritten/" class="text-teal-600 hover:underline">Michele Müller-Itten</a> and 
+                        <a href="https://www.zachstangebye.com/" class="text-teal-600 hover:underline">Zach Stangebye</a>
+                    </p>
+                </div>
+
+                <!-- Paper 2 -->
+                <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="files/AKN.pdf" class="hover:text-teal-600 transition">
+                                Bridges
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium whitespace-nowrap">Very Preliminary</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with <a href="http://miklos.koren.hu/" class="text-teal-600 hover:underline">Miklós Koren</a> and 
+                        <a href="https://sites.google.com/site/davidknagy/" class="text-teal-600 hover:underline">David Krisztián Nagy</a>
+                    </p>
+                </div>
+
+                <!-- Paper 3 -->
+                <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="files/AK.pdf" class="hover:text-teal-600 transition">
+                                Everything all the time? Entry and exit in U.S. Import Varieties
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium whitespace-nowrap">Working Paper</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with <a href="http://miklos.koren.hu/" class="text-teal-600 hover:underline">Miklós Koren</a>
+                    </p>
+                    <div class="mt-3">
+                        <a href="files/AK_slides.pdf" class="text-teal-600 hover:underline text-sm">→ Slides</a>
+                    </div>
+                </div>
+
+                <!-- Paper 4 -->
+                <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                        <a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxzdGVmYW5pYWFsYmFuZXNpfGd4OjY3YWM1NzY4NjQzZGUzZA" class="hover:text-teal-600 transition">
+                            Understanding Capital Taxation in Ramsey Models
+                        </a>
+                    </h3>
+                    <p class="text-gray-600">
+                        with <a href="https://sites.google.com/site/stefaniaalbanesi/" class="text-teal-600 hover:underline">Stefania Albanesi</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Short Notes -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Short Notes</h3>
+                <div class="space-y-4">
+                    <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                            <a href="https://www.philadelphiafed.org/-/media/research-and-data/publications/working-papers/2016/wp16-35.pdf?la=en" class="hover:text-teal-600 transition">
+                                A Tractable Model of the Demand for Reserves Under Nonlinear Remuneration Schemes
+                            </a>
+                        </h4>
+                        <p class="text-gray-600 text-sm">FRB Philadelphia Working Paper 16-35, December 2016</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                            <a href="https://www.philadelphiafed.org/-/media/research-and-data/publications/working-papers/2015/wp15-44.pdf?la=en" class="hover:text-teal-600 transition">
+                                On the Use of Market-Based Probabilities for Policy Decisions
+                            </a>
+                        </h4>
+                        <p class="text-gray-600 text-sm">FRB Philadelphia Working Paper 15-44, 2015</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                            <a href="https://www.philadelphiafed.org/research-and-data/publications/working-papers/2013/wp13-4.pdf" class="hover:text-teal-600 transition">
+                                On the Timing of Monetary Policy Reform
+                            </a>
+                        </h4>
+                        <p class="text-gray-600 text-sm">FRB Philadelphia Working Paper 13-4, 2013</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Publications</h2>
+            
+            <div class="space-y-6">
+                <!-- Publication 1 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="https://www.philadelphiafed.org/the-economy/macroeconomics/geometric-methods-for-finite-rational-inattention" class="hover:text-teal-600 transition">
+                                Geometric Methods for Finite Rational Inattention
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">Published</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with <a href="https://sites.google.com/site/mmulleritten/" class="text-teal-600 hover:underline">Michele Müller-Itten</a> and 
+                        <a href="https://www.zachstangebye.com/" class="text-teal-600 hover:underline">Zach Stangebye</a>
+                    </p>
+                    <p class="text-gray-700 italic mb-2">Quantitative Economics, 15(1), pp. 115-144, 2024</p>
+                    <div class="mt-3">
+                        <a href="https://github.com/mmulleri/GAP-SQP" class="text-teal-600 hover:underline text-sm">→ Codes (solve finite RI models, quickly!)</a>
+                    </div>
+                </div>
+
+                <!-- Publication 2 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="files/AAL_2019.pdf" class="hover:text-teal-600 transition">
+                                A Model of the Federal Funds Market: Yesterday, Today, and Tomorrow
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">Published</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with <a href="https://www.newyorkfed.org/research/economists/afonso" class="text-teal-600 hover:underline">Gara Afonso</a> and 
+                        <a href="https://sites.google.com/site/benjaminrlester/" class="text-teal-600 hover:underline">Ben Lester</a>
+                    </p>
+                    <p class="text-gray-700 italic mb-2">Review of Economic Dynamics, 33, pp. 133-204, 2019</p>
+                    <div class="mt-3 flex flex-wrap gap-3">
+                        <a href="https://www.philadelphiafed.org/-/media/research-and-data/publications/working-papers/2018/wp18-10.pdf?la=en" class="text-teal-600 hover:underline text-sm">→ Working paper version</a>
+                        <a href="https://libertystreeteconomics.newyorkfed.org/2018/07/size-is-not-all-distribution-of-bank-reserves-and-fed-funds-dynamics.html" class="text-teal-600 hover:underline text-sm">→ Liberty Street Blog</a>
+                    </div>
+                </div>
+
+                <!-- Publication 3 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="files/A_perils.pdf" class="hover:text-teal-600 transition">
+                                The Perils of Nominal Targets
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">Published</span>
+                    </div>
+                    <p class="text-gray-700 italic mb-2">Review of Economic Studies, 85(1), pp. 50-86, 2018</p>
+                    <div class="mt-3">
+                        <a href="http://www.philadelphiafed.org/research-and-data/publications/working-papers/2014/wp14-2R.pdf" class="text-teal-600 hover:underline text-sm">→ Older version (WP 14-2/R)</a>
+                    </div>
+                </div>
+
+                <!-- Publication 4 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="files/AH.pdf" class="hover:text-teal-600 transition">
+                                Taxes and Capital Structure: Understanding Firms' Savings
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">Published</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with <a href="http://faculty.arts.ubc.ca/vhnatkovska/" class="text-teal-600 hover:underline">Viktoria Hnatkovska</a>
+                    </p>
+                    <p class="text-gray-700 italic mb-2">Journal of Monetary Economics, 87, pp. 13-33, 2017</p>
+                    <div class="mt-3 flex flex-wrap gap-3">
+                        <a href="files/AH_2013.pdf" class="text-teal-600 hover:underline text-sm">→ 2013 version</a>
+                        <a href="https://www.philadelphiafed.org/research-and-data/publications/working-papers/2012/wp12-1.pdf" class="text-teal-600 hover:underline text-sm">→ WP 12-1</a>
+                        <a href="files/AH-Appendix.pdf" class="text-teal-600 hover:underline text-sm">→ Online Appendix</a>
+                    </div>
+                </div>
+
+                <!-- Publication 5 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="files/AL.pdf" class="hover:text-teal-600 transition">
+                                Excess Reserves and Monetary Policy Implementation
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">Published</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with <a href="https://sites.google.com/site/benjaminrlester/" class="text-teal-600 hover:underline">Ben Lester</a>
+                    </p>
+                    <p class="text-gray-700 italic mb-2">Review of Economic Dynamics, 23, pp. 212-235, 2017</p>
+                    <div class="mt-3">
+                        <a href="https://www.philadelphiafed.org/-/media/research-and-data/publications/working-papers/2015/wp15-35r.pdf?la=en" class="text-teal-600 hover:underline text-sm">→ Older version (WP 15-35)</a>
+                    </div>
+                </div>
+
+                <!-- Publication 6 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="https://www.aeaweb.org/articles?id=10.1257/aer.20151233" class="hover:text-teal-600 transition">
+                                A Balls-and-Bins Model of Trade: A Reply
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">Published</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with <a href="http://miklos.koren.hu/" class="text-teal-600 hover:underline">Miklós Koren</a>
+                    </p>
+                    <p class="text-gray-700 italic">American Economic Review, 106(3), pp. 852-854, 2016</p>
+                </div>
+
+                <!-- Publication 7 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="files/A_eqselect.pdf" class="hover:text-teal-600 transition">
+                                Sustainable Monetary Policy and Inflation Expectations
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">Published</span>
+                    </div>
+                    <p class="text-gray-700 italic mb-2">B.E. Journal of Macroeconomics, 16(2), pp. 301-334, 2016</p>
+                    <div class="mt-3">
+                        <a href="https://www.philadelphiafed.org/research-and-data/publications/working-papers/2010/wp10-20.pdf" class="text-teal-600 hover:underline text-sm">→ Older version (WP 10-20)</a>
+                    </div>
+                </div>
+
+                <!-- Publication 8 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="files/AK_xandnox.pdf" class="hover:text-teal-600 transition">
+                                Economies of Scale and the Size of Exporters
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">Published</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with <a href="http://miklos.koren.hu/" class="text-teal-600 hover:underline">Miklós Koren</a>
+                    </p>
+                    <p class="text-gray-700 italic mb-2">Journal of the European Economic Association, 13(3), pp. 482-511, 2015</p>
+                    <div class="mt-3">
+                        <a href="files/AK_xandnox_appendix.pdf" class="text-teal-600 hover:underline text-sm">→ Online Appendix</a>
+                    </div>
+                </div>
+
+                <!-- Publication 9 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="files/AK_bb.pdf" class="hover:text-teal-600 transition">
+                                A Balls-and-Bins Model of Trade
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">Published</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with <a href="http://miklos.koren.hu/" class="text-teal-600 hover:underline">Miklós Koren</a>
+                    </p>
+                    <p class="text-gray-700 italic mb-2">American Economic Review, 104(7), pp. 2127-2151, 2014</p>
+                    <div class="mt-3 flex flex-wrap gap-3">
+                        <a href="files/AK_bb_appendix.pdf" class="text-teal-600 hover:underline text-sm">→ Online appendix</a>
+                        <a href="https://github.com/korenmiklos/Balls-and-Bins-AER" class="text-teal-600 hover:underline text-sm">→ Codes and data links</a>
+                    </div>
+                </div>
+
+                <!-- Publication 10 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="http://www.sciencedirect.com/science/article/pii/S0304393212001419" class="hover:text-teal-600 transition">
+                                Fraud Deterrence in Dynamic Mirrleesian Economies
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">Published</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with <a href="https://sites.google.com/site/thomasmichaelmertens/" class="text-teal-600 hover:underline">Thomas M. Mertens</a>
+                    </p>
+                    <p class="text-gray-700 italic">Journal of Monetary Economics, 60(2), pp. 139-151, 2013</p>
+                </div>
+
+                <!-- Publication 11 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="http://restud.oxfordjournals.org/content/79/4/1271.full.pdf+html" class="hover:text-teal-600 transition">
+                                Intertemporal Distortions in the Second Best
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">Published</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with <a href="https://sites.google.com/site/stefaniaalbanesi/" class="text-teal-600 hover:underline">Stefania Albanesi</a>
+                    </p>
+                    <p class="text-gray-700 italic">Review of Economic Studies, 79(4), pp. 1271-1307, 2012</p>
+                </div>
+
+                <!-- Publication 12 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="http://www.sciencedirect.com/science/article/pii/S0304393212000773" class="hover:text-teal-600 transition">
+                                Accounting for Development through Investment Prices
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">Published</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with <a href="http://faculty.arts.ubc.ca/alahiri/" class="text-teal-600 hover:underline">Amartya Lahiri</a>
+                    </p>
+                    <p class="text-gray-700 italic">Journal of Monetary Economics, 59(6), pp. 550-564, 2012</p>
+                </div>
+
+                <!-- Publication 13 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="http://ideas.repec.org/a/eee/eecrev/v55y2011i2p228-245.html" class="hover:text-teal-600 transition">
+                                Credible Redistribution Policy and Skilled Migration
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">Published</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with <a href="http://qcpages.qc.cuny.edu/%7Efortega/QC/Welcome.html" class="text-teal-600 hover:underline">Francesc Ortega</a>
+                    </p>
+                    <p class="text-gray-700 italic">European Economic Review, 55(2), pp. 228-245, 2011</p>
+                </div>
+
+                <!-- Publication 14 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="http://www.sciencedirect.com/science/article/pii/S1094202510000049" class="hover:text-teal-600 transition">
+                                Credible Redistributive Policies and Migration Across U.S. States
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">Published</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with <a href="http://qcpages.qc.cuny.edu/%7Efortega/QC/Welcome.html" class="text-teal-600 hover:underline">Francesc Ortega</a>
+                    </p>
+                    <p class="text-gray-700 italic">Review of Economic Dynamics, 13, pp. 403-423, 2010</p>
+                </div>
+
+                <!-- Publication 15 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="http://www.degruyter.com/view/j/bejm.2009.9.1/bejm.2009.9.1.1947/bejm.2009.9.1.1947.xml?format=INT" class="hover:text-teal-600 transition">
+                                Of Nutters and Doves
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">Published</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with <a href="https://sites.google.com/site/martinbodenstein/" class="text-teal-600 hover:underline">Martin Bodenstein</a>
+                    </p>
+                    <p class="text-gray-700 italic">B.E. Journal of Macroeconomics, 9(1), art. 35, 2009</p>
+                </div>
+
+                <!-- Publication 16 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                        <a href="http://ideas.repec.org/a/eee/pubeco/v92y2008i10-11p2275-2281.html" class="hover:text-teal-600 transition">
+                            A Note on Incomplete Factor Taxation
+                        </a>
+                    </h3>
+                    <p class="text-gray-700 italic">Journal of Public Economics, 92, pp. 2275-2281, 2008</p>
+                </div>
+
+                <!-- Publication 17 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                        <a href="http://ideas.repec.org/a/mcb/jmoncb/v40y2008i5p867-895.html" class="hover:text-teal-600 transition">
+                            A General Theory (and Some Evidence) of Expectation Traps in Monetary Policy
+                        </a>
+                    </h3>
+                    <p class="text-gray-700 italic">Journal of Money, Credit, and Banking, 40, pp. 867-896, 2008</p>
+                </div>
+
+                <!-- Publication 18 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            <a href="http://ideas.repec.org/a/cup/macdyn/v12y2008i05p664-693_07.html" class="hover:text-teal-600 transition">
+                                Can the U.S. Monetary Policy Fall (Again) in an Expectation Trap?
+                            </a>
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">Published</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with <a href="https://sites.google.com/site/martinbodenstein/" class="text-teal-600 hover:underline">Martin Bodenstein</a>
+                    </p>
+                    <p class="text-gray-700 italic">Macroeconomic Dynamics, 12, pp. 664-693, 2008</p>
+                </div>
+
+                <!-- Publication 19 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                        <a href="http://ideas.repec.org/a/red/issued/06-38.html" class="hover:text-teal-600 transition">
+                            Time-Consistent Fiscal Policy and Heterogeneous Agents
+                        </a>
+                    </h3>
+                    <p class="text-gray-700 italic">Review of Economic Dynamics, 10, pp. 31-54, 2007</p>
+                </div>
+
+                <!-- Publication 20 -->
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-gray-900 flex-1">
+                            Equilibrium Selection Through Incomplete Information in Coordination Games: An Experimental Study
+                        </h3>
+                        <span class="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium whitespace-nowrap">Published</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">
+                        with Antonio Cabrales and Rosemarie Nagel
+                    </p>
+                    <p class="text-gray-700 italic">Experimental Economics, 10, pp. 221-234, 2007</p>
+                </div>
+            </div>
+
+            <!-- Other Publications -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Other Publications</h3>
+                <div class="space-y-4">
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                            <a href="https://www.philadelphiafed.org/-/media/research-and-data/publications/business-review/2015/q3/brq315_a_bit_of_a_miracle_no_more.pdf?la=en" class="hover:text-teal-600 transition">
+                                "A Bit of a Miracle No More: The Decline of the Labor Share"
+                            </a>
+                        </h4>
+                        <p class="text-gray-600 text-sm">FRB Philadelphia Business Review, Third Quarter 2015</p>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                            <a href="https://www.philadelphiafed.org/research-and-data/publications/business-review/2014/q1/brq114_does_the_us_trade.pdf" class="hover:text-teal-600 transition">
+                                "Does the U.S. Trade More Widely Than It Appears?"
+                            </a>
+                        </h4>
+                        <p class="text-gray-600 text-sm">FRB Philadelphia Business Review, First Quarter 2014</p>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                            <a href="https://www.philadelphiafed.org/research-and-data/publications/business-review/2012/q3/brq312_rise-of-corporate-savings.pdf" class="hover:text-teal-600 transition">
+                                "The Rise of Corporate Savings"
+                            </a>
+                        </h4>
+                        <p class="text-gray-600 text-sm">FRB Philadelphia Business Review, Third Quarter 2012</p>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                            <a href="https://www.philadelphiafed.org/research-and-data/publications/business-review/2011/q1/brq111_output-gaps-uses-and-limitations.pdf" class="hover:text-teal-600 transition">
+                                "Output Gaps: Uses and Limitations"
+                            </a>
+                        </h4>
+                        <p class="text-gray-600 text-sm">FRB Philadelphia Business Review, First Quarter 2011</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Links Section -->
+    <section id="links" class="py-16 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Links</h2>
+            <div class="bg-white rounded-lg shadow-sm p-6">
+                <a href="https://www.philadelphiafed.org/" class="text-lg text-teal-600 hover:text-teal-800 transition">
+                    Federal Reserve Bank of Philadelphia
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-8">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-600">
+            <p>&copy; 2026 Roc Armenter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+        
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
