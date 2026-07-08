@@ -1,12 +1,14 @@
 # CLAUDE.md
 
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 ## Project Overview
 
 Personal academic website for **Roc Armenter** — Executive Vice President and Economist at the Federal Reserve Bank of Philadelphia, and Visiting Scholar at the Wharton School of Finance. Hosted on GitHub Pages at [rocarm.github.io](https://rocarm.github.io/).
 
 ## Tech Stack
 
-- **Static HTML5** — single-page site (`index.html`, ~610 lines)
+- **Static HTML5** — single-page site (`index.html`, ~570 lines)
 - **Tailwind CSS v4** via CDN (`<script src="https://cdn.tailwindcss.com">`) — no build step
 - **Vanilla JavaScript** — minimal, only mobile menu toggle
 - **No package manager, no build system, no framework**
@@ -15,13 +17,20 @@ Personal academic website for **Roc Armenter** — Executive Vice President and 
 
 ```
 index.html                  # Main (and only) page
+README.md                   # Public-facing readme (see caveat under Deployment)
 assets/css/custom.css       # CSS custom properties (Academic Slate theme)
 assets/images/profile.jpg   # Profile photo
-files/                      # Research paper PDFs and CV
+files/                      # Research paper PDFs and CV (see files/ list below)
 docs/PLAN.md                # Archived redesign plan (completed)
+docs/REVIEW.md              # Archived review notes
+docs/REVIEW_FINDINGS.md     # Archived review findings
+docs/bio_text.txt           # Source bio copy
 docs/backups/               # Old versions of index.html
-docs/scripts/               # Maintenance PowerShell scripts
+docs/scripts/               # Maintenance PowerShell scripts (e.g. reorganize.ps1)
 ```
+
+`oracle.py` and `__pycache__/` in the repo root are an unrelated personal
+scratch script, not part of the website — leave them out of any site changes.
 
 ## Local Development
 
@@ -74,14 +83,19 @@ Tailwind classes used inline: `text-teal-600`, `bg-teal-50`, `hover:text-teal-60
 
 ## Site Sections (in order)
 
-1. **Navigation** — sticky header with hamburger menu on mobile
-2. **Home** — profile photo, titles, expertise badges, bio
-3. **Publications** — published research papers (cards)
-4. **Other Publications** — business review articles
-5. **Working Papers** — in-progress research
-6. **Short Notes** — miscellaneous papers
-7. **Links** — external links (Fed website)
-8. **Footer** — copyright
+The page has only **four** top-level `<section id="...">` blocks. `Nav` and
+`Footer` are outside them, and "Other Publications" / "Short Notes" are `<h3>`
+subsections nested *inside* the section listed beside them — not standalone
+sections. Update nav anchors and headings together when adding/renaming.
+
+- **Nav** — sticky header, hamburger menu on mobile. Anchors: Home,
+  Publications, Working Papers, CV (`files/CV.pdf`), Links
+- `#home` — profile photo, titles, expertise badges, bio
+- `#publications` — published research (cards) + **Other Publications** `<h3>`
+  (business review articles)
+- `#working-papers` — in-progress research + **Short Notes** `<h3>`
+- `#links` — external links (Fed website)
+- **Footer** — copyright
 
 ## Important Notes
 

@@ -70,7 +70,7 @@ To deploy changes:
 ```bash
 git add .
 git commit -m "Update website"
-git push origin main
+git push origin master
 ```
 
 ## License
