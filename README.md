@@ -1,51 +1,52 @@
 # Roc Armenter - Personal Website
 
-Professional academic website for Roc Armenter, Executive Vice President and Economist at the Federal Reserve Bank of Philadelphia, and Visiting Scholar at Wharton School.
+Professional academic website for Roc Armenter, Executive Vice President and Economist at the Federal Reserve Bank of Philadelphia, and Visiting Scholar at the Wharton School of Finance.
+
+Live at [rocarm.github.io](https://rocarm.github.io/).
 
 ## About
 
-This website showcases research publications, working papers, and professional information. The site features a modern, responsive design built with Tailwind CSS.
+This website showcases research publications, working papers, writing, and professional information. It is a single static HTML page styled with Tailwind CSS (via CDN) using the **Academic Slate** color scheme — no build step or framework.
 
 ## Structure
 
-- `index.html` - Main website page
-- `assets/images/` - Profile photos and images
-- `assets/css/custom.css` - Custom CSS variables for color scheme
-- `files/` - Research papers and PDFs
+- `index.html` - Main (and only) page
+- `assets/images/` - Profile photo
+- `assets/css/custom.css` - CSS custom properties (Academic Slate theme)
+- `files/` - Research paper PDFs and CV
+- `docs/` - Archived plans, review notes, and maintenance scripts
+
+### Page sections (in order)
+
+Home → Publications → Working Papers → Writing → Selected Events → Links
+
+See `EDITING.md` for a plain-English guide to where every piece of text lives and copy-paste templates for adding items.
 
 ## Customization
 
-### Changing Color Scheme
+### Color Scheme: Academic Slate
 
-Edit `assets/css/custom.css` to modify the color scheme. The file uses CSS variables for easy customization:
+Edit `assets/css/custom.css` to modify the color scheme. The file uses CSS variables:
 
 ```css
 :root {
-  --primary-color: #1e3a8a;      /* Navy blue */
-  --primary-light: #3b82f6;      /* Light blue */
-  --accent-color: #2563eb;       /* Blue accent */
+  --primary-color: #334155;   /* Charcoal (headings)  */
+  --accent-color:  #14b8a6;   /* Teal (links, badges) */
+  --text-primary:  #1e293b;   /* Body text            */
+  --bg-secondary:  #f8fafc;   /* Alternating sections */
   /* ... more variables */
 }
 ```
 
-### Color Scheme Options
-
-The site currently uses a professional navy/blue theme. Other suggested palettes:
-
-1. **Academic Slate**: Charcoal (#334155) with teal accents (#14b8a6)
-2. **Modern Emerald**: Deep green (#065f46) with emerald (#10b981)
-3. **Professional Indigo**: Indigo (#4f46e5) with purple (#8b5cf6)
-4. **Classic Burgundy**: Deep red (#991b1b) with gold (#f59e0b)
+Section styling is done inline with Tailwind utility classes (e.g. `text-teal-600`, `bg-teal-50`, `hover:text-teal-600`).
 
 ## Features
 
 - 📱 Fully responsive design (mobile-first)
-- 🎨 Tailwind CSS via CDN
-- 🎯 Sticky navigation with smooth scrolling
-- 📄 Card-based publication layouts
-- 🏷️ Status badges (Published, Working Paper, etc.)
-- ♿ Semantic HTML5 with accessibility features
-- 🎨 Easily customizable color scheme
+- 🎨 Tailwind CSS via CDN, Academic Slate palette (charcoal + teal)
+- 🎯 Sticky navigation with smooth scrolling and mobile hamburger menu
+- 📄 Card-based publication and working-paper layouts
+- ♿ Semantic HTML5 with UTF-8 encoding (correct diacritics, e.g. "Miklós", "Michèle")
 
 ## Local Development
 
@@ -63,12 +64,10 @@ npx http-server
 
 ## Deployment
 
-This site is hosted via GitHub Pages at [https://rocarm.github.io/](https://rocarm.github.io/)
-
-To deploy changes:
+This site is hosted via GitHub Pages at [https://rocarm.github.io/](https://rocarm.github.io/), auto-deploying from the `master` branch of `rocarm/rocarm.github.io`.
 
 ```bash
-git add .
+git add index.html
 git commit -m "Update website"
 git push origin master
 ```
