@@ -120,7 +120,7 @@ that doesn't apply. Fields still needed are marked `[…]` below — fill those 
 - **Miami Macro 2026**, "The Dynamics of Ample Reserves and the Size of the Fed's Balance Sheet," Plenary Speaker, University of Miami – Herbert Business School, April 24, 2026.
 - **FRBSF Macroeconomics and Monetary Policy Conference**, "Fluctuations in the TGA and Their Effect on the Fed's Balance Sheet" (Annette Vissing-Jorgensen, 2026), Discussant, Federal Reserve Bank of San Francisco, March 27, 2026.
 - **Allied Social Science Associations (ASSA) Annual Meeting**, "Tariffs and Free Trade Agreements," Chair, [Philadelphia, PA], January 3, 2026.
-- **National Association for Business Economics (NABE) Annual Meeting**, "Consumer Spending during Inflation 2.0," Chair, [Philadelphia, PA], October 14th, 2026.
+- **National Association for Business Economics (NABE) Annual Meeting**, "Consumer Spending during Inflation 2.0," Chair, [Philadelphia, PA], October 14th, 2025.
 - **Wharton Liquidity Conference**, "Bank Balance Sheets and Liquidity," Session Chair, Wharton, 2024.
 - **BEAR Conference**, "Managing the Central Bank’s Balance Sheet in a Period of Quantitative Tightening," Panelist, Bank of England, February 24, 2025.
 - **Annual State of the Economy**, Panelist, Chamber of Commerce for Greater Philadelphia, 2025.
